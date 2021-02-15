@@ -1,0 +1,26 @@
+Set range
+unluckyMax = 500;
+unluckyMin = unluckyMax - 10;
+	   = 490;
+
+Input              		Behavior 
+Throw		 		Expected Behavior      		Obsevered Behavior  
+499				[Print out meassages]		[Print out meassages]
+490				[Print out meassages]		[Print out meassages]
+100				[Condition does not happen]	[Condition does not happen]
+0				[Condition does not happen]	[Condition does not happen]
+-1				[Condition does not happen]	[Condition does not happen]
+
+
+
+Set range
+unluckyMax = -500;
+unluckyMin = unluckyMax - 10;
+	   = -510;
+Input              		Behavior 
+Throw		 		Expected Behavior      		Obsevered Behavior  
+1000				[Condition does not happen]	[Condition does not happen]
+-500				[Print out meassages]		[Print out meassages]
+-510				[Print out meassages]		[Print out meassages]
+-511				[Condition does not happen]	[Condition does not happen]
+

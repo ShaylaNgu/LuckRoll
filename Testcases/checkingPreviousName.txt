@@ -1,0 +1,61 @@
+defined previousNames = ["1", "2", "3", "4"]; - for whitebox testing pursoses 
+ - meaning program should continue to loop until anything but "1", "2", "3" or "4" is typed in
+	loop = name in not accepted 
+
+
+Input              		 	Behavior 
+no. inputs	new name inputed        Expected Behavior      Obsevered Behavior  
+					
+1		1			loop			loop
+2		1			loop			loop
+3		1			loop			loop
+4		1			loop			loop
+5		1			loop			loop
+6		2			loop			loop
+7		2			loop			loop
+8		1			loop			loop
+9		1			loop			loop
+10		3			loop			loop
+11		1			loop			loop
+12		2			loop			loop
+13		3			loop			loop
+14		4			loop			loop
+15		4			loop			loop
+16		56			accpets name		accpets name
+
+reasons:
+- for why testing previous name already tested(no.input 8), to make sure program checks new inputed name if it already exists.
+- testing '4'is boundary case like '1', '4' is the last value on vector storing names
+ 
+
+
+test characters, numbers(  decimals, negatives), special characters and spaces  
+- all are bondary cases to make sure program works when user input unconvertional name 
+defined previousNames = ["1.0", "ki-2", "$", "hi", "o o", "treeeeeeeeeeeeeeeeeee"]; - for whitebox testing pursoses 
+ - meaning program should continue to loop until anything but "1.0", "ki-2", "$", "hi", "o o"  or "treeeeeeeeeeeeeeeeeee"
+	is typed in
+	loop = name is not accepted 
+
+
+Input              		 	Behavior 
+no. inputs	name	                Expected Behavior      Obsevered Behavior 
+
+1		1.0			loop			loop
+2		1.0			loop			loop
+3		1.0			loop			loop
+4		$			loop			loop
+5		$			loop			loop
+6		$			loop			loop
+7		1.0			loop			loop
+8		o o			loop			loop
+9		o o			loop			loop
+10		hi			loop			loop
+11		treeeeeeeeeeeeeeeeeee	loop			loop
+12		treeeeeeeeeeeeeeeeeee	loop			loop
+13		ki-2			loop			loop
+14		ki-2			loop			loop
+15		treeeeeeeeeeeeeeeeeee	loop			loop
+16		$			loop			loop
+17		good!			accpets name		accpets name
+
+

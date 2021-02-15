@@ -1,0 +1,9 @@
+
+Input            	Behavior 
+Throw		 	Expected Behavior      		Expected Output		Obsevered Behavior 		Obsevered Output
+0			[Condition does not happen]	0			[Condition does not happen]	0
+-110			[Condition does happen]		-10			[Condition does happen]		-10
+910			[Condition does happen]		-910			[Condition does happen]		-910
+-1			[Condition does not happen]	0			[Condition does not happen]	0
+-120			[Condition does happen]		-120			[Condition does happen]		-120
+-693			[Condition does happen]		693			[Condition does happen]		693

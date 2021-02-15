@@ -1,0 +1,10 @@
+Input              		Behavior 
+User	Prompt	 		Expected Behavior      				Obsevered Behavior  
+y	[NA]			[Condition does not happen]			[Condition does not happen]
+n	n			[Condition happens and program ends]		[Condition happens and program ends]
+n	y			[Condition happens and program doesn't end]	[Condition happens and program doesn't end]
+@	q			[Condition happens and program ends]		[Condition happens and program ends]
+%	y			[Condition happens and program doesn't end]	[Condition happens and program doesn't end]
+10	-0.11			[Condition happens and program ends]		[Condition happens and program ends]
+yes	y			[Condition happens and program doesn't end]	[Condition happens and program doesn't end]
+nooo	NEVER			[Condition happens and program ends]		[Condition happens and program ends]
